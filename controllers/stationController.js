@@ -22,3 +22,14 @@ exports.getStations = async (req, res) => {
 };
 
 
+exports.updateStation = async (req, res) => {
+    const { id } = req.params;
+    const { name, location } = req.body;
+    try {
+        const station = await Station.findByIdAndUpdate(id, { name, location }, { new: true });
+        res.json(station);
+    } catch (err) {
+        res.status(400).json({ error: err.message });
+    }
+};
+
