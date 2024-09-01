@@ -1,3 +1,5 @@
+const Station = require('../models/Station');
+
 exports.createStation = async (req, res) => {
     const { name, location } = req.body;
     try {
@@ -8,3 +10,15 @@ exports.createStation = async (req, res) => {
         res.status(400).json({ error: err.message });
     }
 };
+
+
+exports.getStations = async (req, res) => {
+    try {
+        const stations = await Station.find();
+        res.json(stations);
+    } catch (err) {
+        res.status(400).json({ error: err.message });
+    }
+};
+
+
