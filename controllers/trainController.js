@@ -23,3 +23,11 @@ exports.updateTrain = async (req, res) => {
     }
 };
 
+exports.getTrains = async (req, res) => {
+    try {
+        const trains = await Train.find().populate('stops.station');
+        res.json(trains);
+    } catch (err) {
+        res.status(400).json({ error: err.message });
+    }
+};
