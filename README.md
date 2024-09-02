@@ -36,7 +36,7 @@ This project is a backend system developed using Node.js, Express, and MongoDB. 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Emranhossainshuvo/train-management.git or git clone git@github.com:Emranhossainshuvo/train-management.git  
+   git clone https://github.com/Emranhossainshuvo/train-management.git 
    
    cd train-management
 
@@ -53,4 +53,4 @@ This project is a backend system developed using Node.js, Express, and MongoDB. 
 
    D.  run <code>npm start</code>
 
-After completing these steps you should start the project working properly. 
+After completing these steps you should start the project working properly on port localhost://3000 or localhost://5000. 
