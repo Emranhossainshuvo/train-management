@@ -36,16 +36,14 @@ This project is a backend system developed using Node.js, Express, and MongoDB. 
 
 1. **Clone the repository:**
    ```bash
-   git clone (https://github.com/Emranhossainshuvo/train-management.git)
-   ```SSH
-   git clone (git@github.com:Emranhossainshuvo/train-management.git)
+   git clone <code>https://github.com/Emranhossainshuvo/train-management.git </code> or <code>git clone git@github.com:Emranhossainshuvo/train-management.git </code> 
    
-   cd train-management
+   <code>cd train-management</code>
 
-   npm install
+   <code>npm install</code>
 
 2. **Configure the application:**
-   after cloning and installing all the dependancy you'll have to add an .env file in the root of your project and you'll have and environment values
+   after cloning and installing all the dependencies, you'll have to add a .env file in the root of your project and you'll have to add environment variables. 
 
    1.  Port = 3000
    2.  MONGO_URI = mongodb+srv://train-system:OHSeWkWwPeToI3Ku@cluster0.0fn8ke9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
